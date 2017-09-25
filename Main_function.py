@@ -32,7 +32,6 @@ if __name__ == "__main__":
     minibatchsize = 40 #Set =1 for regular stochastic gradient descent
 
     # --------------- Initializing Parameters------------------------
-    hidden_layer_size=[hidden_layer_size for i in range(n_hidden)]
     num_labels = 10
     layer_sizes=[input_layer_size]
     layer_sizes.extend([hidden_layer_size[j] for j in range(len(hidden_layer_size))])

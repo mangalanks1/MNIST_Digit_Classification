@@ -1,4 +1,5 @@
 from utils import randInitializeWeights, Unroll_weights, Train_network
+from utils import forward_prop, Mean_classification_error, cross_entropy_loss
 from utils import Tanh, TanhGradient, sigmoidGradient,sigmoid, ReLu, ReLuGradient, Load_data, display_data
 import matplotlib.pyplot as plt
 import numpy as np
@@ -25,7 +26,7 @@ if __name__ == "__main__":
     activ_Grad_func = TanhGradient      # can be sigmoidGradient, ReLuGradient, TanhGradient
 
     #----------------------------- Hyper Parameters -----------------------
-    epochmax = 100
+    epochmax = 50
     LearningRate = 0.01
     reg_lambda = 0.001
     momentum = 0.1
